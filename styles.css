@@ -470,7 +470,7 @@ header {
     padding: 60px 40px;
     text-align: center;
     background-color: #00021a;
-
+display: none;
 
   }
 
@@ -654,98 +654,254 @@ text-align: left;
 }
 
 
-.projects-section {
-  text-align: center;
-  padding: 50px 20px;
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px;
+}
+
+/* Project Box */
+.project {
+  display: flex;
+  background-color: #0e1525;
+padding:;
+  border-radius: 8px;
+  border: 1px solid #1c2541;
+  align-items: center;
+  gap: 30px;
 
 }
 
-.projects-container {
-  display: flex;
+/* Image Styling */
+.project-image{
+  width: 37%;
+  height: 100%;
+  background-color: #00021a;
+}
+.project-image img {
+  width: 300px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #00021a;
+
+}
+
+/* Content */
+.project-content {
+  flex: 1;
+  height: 100%;
+}
+
+.project-content h3{
+  font-size: 24px;
+  margin-top: -150px;
+}
+.project-content p {
+  margin-bottom: 60px;
+}
+/* Stacks */
+.stacks {
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  align-items: center;
   justify-content: center;
+  margin-left: 20px;
+}
+
+.stacks span {
+  background-color: #16213e;
+  color: #50c8ff;
+  padding: 5px 10px;
+  border-radius: 85px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 1px;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 60px;
+  
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: 300;
+}
+
+.code {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.live {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+.project-content .stacks{
+  display: none;
+}
+/* 🔹 Responsive Layout for Mobile (Max-width: 768px) */
+@media (max-width: 768px) {
+  .projects{
+    padding: 20px;
+  }
+  .project {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text for better readability */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .project-image {
+    width: 100%; /* Make image take full width */
+    display: flex;
+    justify-content: center;
+ height: 100%;
+ padding: 0;
+  }
+
+  .project-image img {
+    width: 100%; /* Adjust image size */
+    max-width: 250px;
+    height: 100%; /* Prevent it from getting too large */
+  }
+
+  .project-content {
+    text-align: left;
+    padding: 10px;
+  }
+  .stacks{
+    display: none;
+  }
+.project-content .stacks{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 900px;
+  row-gap: 8px;
+  gap: 4px;
+  margin-left: 0px;
+  align-items: left;
+  margin: 0;
+  
+}
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .project-content h3{
+margin-top: 10px;
+  }
+  .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+h2
+{
+  font-size: 32px;
+  font-weight: bold;
+  color: #0094FF; /* Neon blue color */
+  width: ;
+  align-self: center;
+margin-bottom: 5px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 120px;
+  text-align: center;
+}
+
+
+
+.skills-description {
+  font-size: 18px;
+  color: rgb(136 146 176);;
+  max-width: ;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Skills Grid */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px;
+  row-gap: 1px;
+  max-width: 90%;
+  margin: auto;
+  justify-items: center;
+  background-color: #112240;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+/* Individual Skill */
+.skill {
+  background: transparent; /* Darker card */
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  border-color: #00aaff;
+}
+
+/* Skill Icons */
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: auto;
 }
 
-.project-card {
-  background: transparent;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  width: 300px;
-  border: 1px solid #0077b6;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-.project-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.project-content {
-  padding: 15px;
-  text-align: left;
-  background-color: #0e668f33;
-}
-
-.project-content h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-.project-content p {
+/* Skill Name */
+.skill p {
   font-size: 14px;
-  color: ;
-  margin-bottom: 10px;
-}
-
-.details-btn {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-}
-
-.details-btn svg {
-  width: 16px;
-  height: 16px;
-  margin-left: 8px;
-  fill: #007bff;
-}
-
-.see-more-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background: linear-gradient(45deg, #007bff, #112240);
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s;
-  font-weight: bold;
-}
-
-.see-more-btn:hover {
-  transform: scale(1.05);
+  color: #00aaff;
+  margin-top: 8px;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .projects-container {
-      flex-direction: column;
-      align-items: center;
+@media (max-width: 600px) {
+  .skills-container {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   }
 
-  .project-card {
-      width: 90%;
+  .skill {
+      width: 80px;
+      padding: 10px;
+  }
+
+  .skill-icon {
+      width: 40px;
+      height: 40px;
+  }
+
+  .skill p {
+      font-size: 12px;
   }
 }
