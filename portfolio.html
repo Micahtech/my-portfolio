@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baba Ben's Portfolio</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+ <script src="https://kit.fontawesome.com/YOUR_FA_KIT.js" crossorigin="anonymous"></script>
+ <style>
+
+    @media (min-width: 769px) {
+      .projects {
+          flex-direction: row;
+          flex-wrap: wrap; /* Allows projects to wrap to new rows */
+    justify-content: space-between; /* Spaces items evenly */
+    gap: 20px;
+      }
+      
+  .project {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text for better readability */
+    gap: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    height: 570px;
+  }
+
+  .project-content p{
+    margin-bottom: -190px;
+   width: 100%;
+    margin: 0 auto;
+  }
+  .project-image {
+    width: 100%; /* Make image take full width */
+    display: flex;
+    justify-content: center;
+ height: 40%;
+ padding: 0px;
+ flex-direction: column;
+  }
+
+  .project-image img {
+    width: 100%; /* Adjust image size */
+    max-width: ;
+    height: 100%; /* Prevent it from getting too large */
+    padding: 0px;
+  }
+
+  .project-content {
+    text-align: left;
+    padding: 15px;
+    margin: 0 auto;
+    height: 60%;
+    max-width: 100%;
+    margin-top: -30px;
+  }
+  .stacks{
+    display: none;
+
+  }
+.project-content .stacks{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  gap: 4px;
+  margin-left: 0px;
+  align-items: left;
+  margin: 0;
+  
+}
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: ;
+    gap: 80px;
+    text-align: left;
+   padding: 0;
+   width: 100%;
+   margin-top: 10px;
+   margin-left: -15px;
+   
+  }
+
+  .project-content h3{
+margin-top: 10px;
+  }
+  .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+  .live{
+    margin-left: 60px;
+    background: none;
+    margin-top: 11px;
+
+  }
+    }
+
+      .intro{
+        margin: 0 auto;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        max-width: auto;
+        
+      }
+ </style>
+</head>
+
+<body>
+  <header id="main-header">
+    <div class="fake-header">
+
+  
+    <div class="header-content">
+        <div class="logo">Baba Ben🌟</div>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="portfolio.html">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Discord Icon for Mobile -->
+        <div class="discord-icon">
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+    </div>
+    </div>
+</header>
+
+<h2 style="text-align: center;">MY Projects</h2>
+<p class="intro">
+    A collection of diverse projects that reflect my growth, learning, and hands-on experience in community management.
+  </p>
+
+<section class="projects">
+  <div class="project">
+      <div class="project-image">
+          <p class="stacks">Skills
+              <span>Telegram</span> <span>Bot</span> <span>Discord</span> <span>X</span>
+          </p>
+          <img src="images/vestn.png" alt="Vantage AI">
+      </div>
+      <div class="project-content">
+          <h3>Vestn Community</h3>
+          <p>VESTN is a Web3 platform that enables investors to diversify their portfolios by owning fractional derivatives of high-value assets across various global sectors. Established in 2021, it leverages blockchain technology for secure, transparent asset tokenization, making premium investments more accessible.</p>
+          <div class="buttons">
+
+            <a href="projects/vestn.html" class="code">Details
+              <img src="images/ri--arrow-right-line.svg" alt="Arrow Icon">
+            </a>
+              <a href="#" class="live">Live
+                <img src="images/quill--link-out.svg">
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Duplicate Project 1 -->
+  <div class="project">
+      <div class="project-image">
+          <p class="stacks">Stacks 
+              <span>Chat GPT</span> <span>X</span> <span>Telegram</span> <span>Discord</span>
+          </p>
+          <img src="images/Adobe Express - file.png" alt="Vantage AI">
+      </div>
+      <div class="project-content">
+          <h3>Eventflo</h3>
+          <p>Eventflo is an AI-powered blockchain platform revolutionizing event ticketing and management with NFT-based fraud-proof tickets, asset tokenization, and on-chain ticket insurance. Its native cryptocurrency, FloCoin ($FloCo), enables secure transactions, decentralized governance, and user rewards within the ecosystem. </p>
+          <div class="buttons">
+
+            <a href="#" class="code">Details
+              <img src="images/ri--arrow-right-line.svg" alt="Arrow Icon">
+            </a>
+            <a href="#" class="live">Live
+              <img src="images/quill--link-out.svg">
+            </a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Duplicate Project 2 -->
+  <div class="project">
+      <div class="project-image">
+          <p class="stacks">Stacks 
+              <span>Discord</span> <span>Telegram</span> <span>Bot</span>
+          </p>
+          <img src="images/rabbit.png" alt="Vantage AI">
+      </div>
+      <div class="project-content">
+          <h3>Crystal Rabbit Club</h3>
+          <p>Crystal Rabbit Club (CRC) is a Solana-based NFT collection powered by BlackBone Hub, designed to provide exclusive benefits and community-driven opportunities for its holders. It empowers members to actively participate in governance by accessing private alpha calls,
+             receiving exclusive airdrops, and engaging in affiliate programs. ​</p>
+          <div class="buttons">
+              <a href="#" class="code">Details
+                <img src="images/ri--arrow-right-line.svg" alt="Arrow Icon">
+              </a>
+              <a href="#" class="live">Live
+                <img src="images/quill--link-out.svg">
+              </a>
+          </div>
+      </div>
+  </div>
+
+  
+  <!-- Duplicate Project 2 -->
+  <div class="project">
+    <div class="project-image">
+        <p class="stacks">Stacks 
+            <span>Discord</span> <span>Telegram</span> <span>Bot</span>
+        </p>
+        <img src="images/antix.png" alt="Vantage AI">
+    </div>
+    <div class="project-content">
+        <h3>Antix</h3>
+        <p>Antix is an AI-powered platform that enables users to create hyper-realistic digital human avatars for enhanced interactions across various platforms. Its native cryptocurrency, ANTIX, facilitates secure transactions, rewards engagement, 
+            and supports decentralized governance within the ecosystem.  ​</p>
+        <div class="buttons">
+            <a href="#" class="code">Details
+              <img src="images/ri--arrow-right-line.svg" alt="Arrow Icon">
+            </a>
+            <a href="#" class="live">Live
+              <img src="images/quill--link-out.svg">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Duplicate Project 2 -->
+  <div class="project">
+    <div class="project-image">
+        <p class="stacks">Stacks 
+            <span>Discord</span> <span>Telegram</span> <span>Bot</span>
+        </p>
+        <img src="images/modbox.png" alt="Vantage AI">
+    </div>
+    <div class="project-content">
+        <h3>Modbox</h3>
+        <p>MOBOX is a blockchain-based platform(DeFi) and non-fungible tokens (NFTs) . The platform offers various features, including NFT-based games and yield farming opportunities, aiming to provide users with engaging and rewarding experiences within the blockchain gaming space.   ​</p>
+        <div class="buttons">
+            <a href="#" class="code">Details
+              <img src="images/ri--arrow-right-line.svg" alt="Arrow Icon">
+            </a>
+            <a href="#" class="live">Live
+              <img src="images/quill--link-out.svg">
+            </a>
+        </div>
+    </div>
+</div>
+
+  <!-- Duplicate Project 2 -->
+  <div class="project">
+    <div class="project-image">
+        <p class="stacks">Stacks 
+            <span>Discord</span> <span>Telegram</span> <span>Bot</span>
+        </p>
+        <img src="images/rabbit.png" alt="Vantage AI">
+    </div>
+    <div class="project-content">
+        <h3>Crystal Rabbit Club</h3>
+        <p>Crystal Rabbit Club (CRC) is a Solana-based NFT collection powered by BlackBone Hub, designed to provide exclusive benefits and community-driven opportunities for its holders. It empowers members to actively participate in governance by accessing private alpha calls,
+           receiving exclusive airdrops, and engaging in affiliate programs. ​</p>
+        <div class="buttons">
+            <a href="#" class="code">Details
+              <img src="images/ri--arrow-right-line.svg" alt="Arrow Icon">
+            </a>
+            <a href="#" class="live">Live
+              <img src="images/quill--link-out.svg">
+            </a>
+        </div>
+    </div>
+</div>
+
+</section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="footer-name">Baba Ben - Community Builder & Marketer</div>
+    <div class="footer-copy">&copy; 2025 Bababen. All Rights Reserved.</div>
+  </footer>
+ <!-- Mobile Bottom Navigation -->
+ <div class="mobile-bottom-menu">
+  <a href="index.html" class="menu-item active">
+      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1"/>
+      </svg>
+      <span>Home</span>
+  </a>
+  <a href="#" class="menu-item">
+      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <circle cx="12" cy="8" r="5"/>
+              <path d="M20 21a8 8 0 1 0-16 0"/>
+              <path d="M12 13a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8"/>
+          </g>
+      </svg>
+      <span>Services</span>
+  </a>
+  <a href="portfolio.html" class="menu-item">
+      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <g>
+              <path d="M10.658 2.553a3 3 0 0 1 2.684 0l7.105 3.553A1 1 0 0 1 21 7v.382l-9 4.5l-9-4.5V7a1 1 0 0 1 .553-.894l7.105-3.553zM3 9.618v6.146a3 3 0 0 0 1.658 2.683L11 21.618v-8l-8-4zm10 12l6.342-3.17A3 3 0 0 0 21 15.763V9.618l-8 4v8z"/>
+          </g>
+      </svg>
+      <span>Projects</span>
+  </a>
+  <a href="#" class="menu-item">
+      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <g>
+              <path d="M20 16v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C4.4 8.472 4 5.898 4 4h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L16 15z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 18.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C9.159 17.023 6.824 14.045 5.5 11m0 0C4.4 8.472 4 5.898 4 4h4l1 4z"/>
+          </g>
+      </svg>
+      <span>Contact</span>
+  </a>
+</div>
+
+
+  <script>
+    
+    window.addEventListener("scroll", function () {
+    const header = document.getElementById("main-header");
+
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      emailjs
+        .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this) // Replace with your Service ID and Template ID
+        .then(
+          function () {
+            document.getElementById("form-status").innerText = "✅ Message sent successfully!";
+            document.getElementById("contact-form").reset();
+          },
+          function (error) {
+            document.getElementById("form-status").innerText = "❌ Failed to send message. Try again.";
+            console.error("FAILED...", error);
+          }
+        );
+    });
+  </script>
+</body>
+</html>
