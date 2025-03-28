@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="styles/project-details.css">
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+    <link rel="stylesheet" href="../styles.css">
+ <style>
+
+    /* General Styles */
+  body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+     
+  }
+  
+  /* Project Container */
+  .project-contain {
+      display: flex;
+      flex-direction: column ;
+
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+     
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Project Image */
+  .project-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      padding: 20px;
+  }
+  
+  .project-image img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+  }
+  
+  /* Project Content */
+  .project-conten {
+      flex: 2;
+      padding: 20px;
+  }
+  
+  .project-title {
+      font-size: 32px;
+      color: #c2c2c2;
+      margin-bottom: 20px;
+  }
+  
+  .project-description {
+      font-size: 16px;
+      color: #c2c2c2;
+      
+  }
+  
+  /* View Live Button */
+  .view-live {
+      display: inline-flex;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: 0.3s;
+  }
+  
+  .view-live:hover {
+      background-color: #0056b3;
+  }
+  
+  .view-live svg {
+      margin-left: 10px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+  }
+  
+  .social-icon img {
+      width: 40px;
+      height: 40px;
+      transition: 0.3s;
+  }
+  
+  .social-icon:hover img {
+      transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+      .project-contain {
+          flex-direction: column;
+          align-items: center;
+          padding: 15px;
+      }
+  
+      .project-conten {
+          text-align: left;
+          padding: 5px;
+      }
+  
+      .view-live {
+          justify-content: center;
+      }
+  
+      .social-icons {
+          justify-content: center;
+      }
+      ul{
+        padding: 15px;
+      }
+      h3{
+        margin-bottom: -15px;
+        margin-left: 2px;
+
+      }
+  }
+
+  ul{
+    margin-bottom: 20px;
+    text-align: left;
+    
+  }
+  h3{
+    font-size: 24px;
+    color: #c2c2c2;
+    text-align: left;
+  }
+  
+   </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="fake-header">
+    
+      
+        <div class="header-content">
+            <div class="logo">Baba Ben🌟</div>
+    
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="../portfolio.html">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Discord Icon for Mobile -->
+            <div class="discord-icon">
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="project-contain">
+        <!-- Project Image -->
+        <div class="project-image">
+            <img src="../images/Adobe Express - file.png" alt="Project Image">
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-conten">
+            <h1 class="project-title">Eventflo (Flocoin)  </h1>
+            <p class="project-description">
+                Eventflo is an AI-powered blockchain platform transforming event ticketing and management through NFT-based fraud-proof tickets, asset tokenization, and on-chain ticket insurance. Leveraging its native cryptocurrency, FloCoin ($FloCo), 
+                Eventflo enables secure transactions, decentralized governance, and user rewards within its ecosystem.
+                
+            </p>
+            <div class="descr">
+            <!-- Tasks & Contributions -->
+            <h3>Tasks & Contributions</h3>
+            <ul>
+                <li>Developed and executed community engagement strategies to educate and onboard users into the Eventflo ecosystem.</li>
+                <li>Managed social media, Telegram, and Discord communities, fostering discussions and providing real-time support.</li>
+                <li>Led content creation, including blogs, whitepapers, and educational material, to promote Eventflo’s value proposition.</li>
+                <li>Assisted in partnerships and collaborations to enhance Eventflo’s reach and credibility.</li>
+                <li>Engaged with users and event organizers to gather feedback and refine platform functionalities.</li>
+            </ul>
+
+            <!-- Challenges -->
+            <h3>Challenges</h3>
+            <ul>
+                <li>Educating users about NFT-based ticketing and blockchain integration in event management.</li>
+                <li>Overcoming skepticism around crypto-based transactions and decentralized governance.</li>
+                <li>Ensuring smooth adoption of FloCoin ($FloCo) within the Eventflo ecosystem.</li>
+            </ul>
+
+            <!-- Solutions -->
+            <h3>Solutions</h3>
+            <ul>
+                <li>Created structured educational campaigns to simplify blockchain ticketing for non-tech users.</li>
+                <li>Developed FAQs, AMAs, and tutorial sessions to address concerns and enhance trust.</li>
+                <li>Implemented a reward-based engagement strategy using $FloCo to drive adoption.</li>
+
+            </ul>
+
+            <!-- Highlights -->
+            <h3>Highlights</h3>
+            <ul>
+                <li>Successfully increased user adoption and engagement through interactive community initiatives.</li>
+                <li>Led high-impact marketing campaigns, boosting awareness of NFT-based ticketing solutions.</li>
+                <li>Played a key role in enhancing the platform’s credibility by collaborating with industry influencers and event organizers.</li>
+                <li>Successfully grew and nurtured an active community that aligned with VESTN’s mission and long-term vision.</li>
+
+            </ul>
+</div>
+            <h3 class="">Conclusion</h3>
+           <p>Eventflo is a game-changer in the event management space, leveraging blockchain and AI to revolutionize ticketing security, accessibility, and decentralization. Through strategic engagement, education, and community building, I contributed to the platform’s success, helping establish a robust foundation for its long-term growth.</p>
+            <!-- View Live Button -->
+            <a href="https://eventflo.io/" class="view-live">
+                View Live
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7"></path>
+                    <path d="M7 7h10v10"></path>
+                </svg>
+            </a>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://x.com/eventfloHQ" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="rgb(20 157 221)" d="M19.753 4.659a1 1 0 0 0-1.506-1.317l-5.11 5.84L8.8 3.4A1 1 0 0 0 8 3H4a1 1 0 0 0-.8 1.6l6.437 8.582l-5.39 6.16a1 1 0 0 0 1.506 1.317l5.11-5.841L15.2 20.6a1 1 0 0 0 .8.4h4a1 1 0 0 0 .8-1.6l-6.437-8.582l5.39-6.16Z"/></g></svg>
+
+                </a>
+                <a href="https://discord.com/channels/@me/1339292948021379095/1352950969868095559" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(20 157 221)" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg>
+                </a>
+                <a href="" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><g fill="none" stroke="rgb(20 157 221)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M21 5l-2.5 15M21 5l-12 8.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="20;0"/></path><path stroke-dasharray="24" stroke-dashoffset="24" d="M21 5l-19 7.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="24;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M18.5 20l-9.5 -6.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.3s" values="14;0"/></path><path stroke-dasharray="10" stroke-dashoffset="10" d="M2 12.5l7 1"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.3s" values="10;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M12 16l-3 3M9 13.5l0 5.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.3s" values="8;0"/></path></g></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
