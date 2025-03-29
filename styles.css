@@ -395,7 +395,7 @@ z-index: 10000;
     font-size: 1rem;
     resize: none;
     background: transparent;
-    
+    color: #fff;
   }
 
   textarea {
@@ -1066,4 +1066,107 @@ margin-bottom: 5px;
 .kitty-box.meow {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+/* General Styles */
+.testimonial-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: transparent;
+}
+
+/* Testimonial Wrapper */
+.testimonial-wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Testimonial Container (Scrolling) */
+.testimonial-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+  max-width: 100%;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Hide scrollbar for Chrome, Safari */
+.testimonial-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: #0e1525;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 320px;
+  max-width: 350px;
+  scroll-snap-align: center;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  color: #c2c2c2;
+}
+
+/* Animation (Visible when in viewport) */
+.testimonial-card.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Testimonial Image */
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Dots Indicator */
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #c2c2c2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #007bff;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .testimonial-container {
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow: visible;
+  }
+
+  .testimonial-card {
+      min-width: 300px;
+  }
+
+  .testimonial-image {
+      width: 100px;
+      height: 100px;
+  }
 }
