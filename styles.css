@@ -40,6 +40,15 @@ z-index: 10000;
 .fake-header{
   
 }
+.hero-socials.contect{
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.hero-socials.contect h3{
+
+}
 
 /* Header Content */
 .header-content {
@@ -407,6 +416,7 @@ z-index: 10000;
     animation: gradientBG 5s ease infinite;
     transition: transform 0.2s;
     margin-top: 20px;
+   
   }
 
   .submit-btn:hover {
