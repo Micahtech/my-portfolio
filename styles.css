@@ -1086,17 +1086,14 @@ margin-bottom: 5px;
 /* Testimonial Container (Scrolling) */
 .testimonial-container {
   display: flex;
-  flex-direction: row;
   gap: 20px;
-  overflow-x: visible;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 20px;
   max-width: 100%;
   scrollbar-width: none;
   scroll-behavior: smooth;
   transition: transform 0.5s ease-in-out;
-  flex-wrap: wrap;
-  overflow: scroll;
 }
 
 /* Hide scrollbar for Chrome, Safari */
@@ -1136,7 +1133,7 @@ margin-bottom: 5px;
 
 /* Dots Indicator */
 .testimonial-dots {
-  display: flex;
+  display: none;
   justify-content: center;
   margin-top: 20px;
 }
@@ -1174,15 +1171,11 @@ margin-bottom: 5px;
       margin: 0 auto;
       
   }
-  .none{
+  .testimonial-dots{
     display: flex;
   }
 }
 .testimonial-author{
   color: #0077b6;
   font-weight: bold;
-}
-
-.none{
-  display: none;
 }
