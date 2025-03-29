@@ -1086,14 +1086,17 @@ margin-bottom: 5px;
 /* Testimonial Container (Scrolling) */
 .testimonial-container {
   display: flex;
+  flex-direction: row;
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: visible;
   scroll-snap-type: x mandatory;
   padding: 20px;
   max-width: 100%;
   scrollbar-width: none;
   scroll-behavior: smooth;
   transition: transform 0.5s ease-in-out;
+  flex-wrap: wrap;
+  overflow: scroll;
 }
 
 /* Hide scrollbar for Chrome, Safari */
@@ -1124,8 +1127,8 @@ margin-bottom: 5px;
 
 /* Testimonial Image */
 .testimonial-image {
-  width: 80px;
-  height: 80px;
+  width: 170px;
+  height: 170px;
   border-radius: 10px;
   object-fit: cover;
   margin-bottom: 10px;
@@ -1168,5 +1171,18 @@ margin-bottom: 5px;
   .testimonial-image {
       width: 100px;
       height: 100px;
+      margin: 0 auto;
+      
   }
+  .none{
+    display: flex;
+  }
+}
+.testimonial-author{
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.none{
+  display: none;
 }
